@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sliding Puzzle</title>
+    <script src="./game.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sliding Puzzle</h1>
+    </header>    
+    <input type="button" id = "newGame" value="New Game" onclick="setGame()">
+    <div class= "container">
+    <div class= "slide">
+        <center><h3>Kaif</h3></center>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+    </div>
+    <div>
+            <center><h3>Preview</h3></center>
+            <img src="kaif.jpg" id="puzzle" alt="Not supported" width="200" height="200">
+    </div>
+    <div class = "details">
+        <p>Time: <span id="time">0</span> s</p>
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Score: <span id="score">500000</span></p>
+    </div>
+</div>
+<img src="black.jpg" id="empty" alt="Not supported" width="400" height="400">
+</body>
+
+</html>
